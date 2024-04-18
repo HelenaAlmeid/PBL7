@@ -1,3 +1,3 @@
 public interface Visualizavel {
-    String visualizar();
+    void visualizar();
 }

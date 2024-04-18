@@ -1,4 +1,4 @@
-public abstract class ItemBibliotecaDigital implements Baixavel, Visualizavel {
+public abstract class ItemBibliotecaDigital {
     protected String titulo;
     protected String autor;
 
@@ -15,6 +15,6 @@ public abstract class ItemBibliotecaDigital implements Baixavel, Visualizavel {
         return autor;
     }
 
-    public abstract String descricao();
+    public abstract void descricao();
 
 }

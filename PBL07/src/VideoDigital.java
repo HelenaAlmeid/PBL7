@@ -11,19 +11,26 @@ public class VideoDigital extends ItemBibliotecaDigital implements Baixavel, Vis
         return duracao;
     }
 
-    public String descricao() {
+    @Override
+    public void descricao() {
         System.out.println("          Descrição          ");
+        System.out.println("");
         System.out.println("Título: " + getTitulo());
         System.out.println("Autor: " + getAutor());
         System.out.println("Duração do video: " + getDuracao());
         System.out.println("-----------------------------");
     }
 
-    public void Baixar(){
+    @Override
+    public void baixar(){
         System.out.println("O video foi baixado");
     }
 
-    public void Visualizavel(){
+    @Override
+    public void visualizar(){
         System.out.println("O video foi visualizado");
     }
+
+   
+    
 }
