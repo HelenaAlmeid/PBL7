@@ -17,4 +17,8 @@ public abstract class ItemBibliotecaDigital {
 
     public abstract void descricao();
 
+    protected abstract void baixar();
+
+    protected abstract void visualizar();
+
 }

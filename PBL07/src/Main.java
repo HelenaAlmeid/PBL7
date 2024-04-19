@@ -21,19 +21,12 @@ public class Main {
         item.add(v);
 
         for (ItemBibliotecaDigital visualizarDescricao: item){
+            String espaco = "-----------------------------";
             visualizarDescricao.descricao();
-            if(visualizarDescricao instanceof Ebook){
-                ((Ebook)visualizarDescricao).baixar();;
-                System.out.println("-----------------------------");
-            }
-            else if(visualizarDescricao instanceof VideoDigital){
-                ((VideoDigital)visualizarDescricao).visualizar();
-                ((VideoDigital)visualizarDescricao).baixar();;
-                System.out.println("-----------------------------");
-            }
-        }
-        
-
-
+            visualizarDescricao.visualizar();
+            System.out.println(espaco);
+            visualizarDescricao.baixar();
+            System.out.println(espaco);
         }
     }
+}

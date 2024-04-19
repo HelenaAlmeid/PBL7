@@ -1,6 +1,6 @@
 public class VideoDigital extends ItemBibliotecaDigital implements Baixavel, Visualizavel {
 
-    protected String duracao;
+    private String duracao;
 
     public VideoDigital(String titulo, String autor, String duracao) {
         super(titulo, autor);
@@ -13,12 +13,14 @@ public class VideoDigital extends ItemBibliotecaDigital implements Baixavel, Vis
 
     @Override
     public void descricao() {
+        String espaco = "-----------------------------";
+        System.out.println(espaco);
         System.out.println("          Descrição          ");
-        System.out.println("");
+        System.out.println(espaco);
         System.out.println("Título: " + getTitulo());
         System.out.println("Autor: " + getAutor());
         System.out.println("Duração do video: " + getDuracao());
-        System.out.println("-----------------------------");
+        System.out.println(espaco);
     }
 
     @Override
@@ -30,7 +32,5 @@ public class VideoDigital extends ItemBibliotecaDigital implements Baixavel, Vis
     public void visualizar(){
         System.out.println("O video foi visualizado");
     }
-
-   
     
 }
