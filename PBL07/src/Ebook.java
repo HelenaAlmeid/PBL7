@@ -12,18 +12,22 @@ public class Ebook extends ItemBibliotecaDigital implements Baixavel {
     }
 
     @Override
-    public void descricao() {
-        System.out.println("          Descrição          ");
-        System.out.println("");
-        System.out.println("Título: " + getTitulo());
-        System.out.println("Autor: " + getAutor());
-        System.out.println("Número de páginas: " + getNumeroPaginas());
-        System.out.println("-----------------------------");
+    public String descricao() {
+        return "          Descrição          \n" +
+                "Título: " + getTitulo() + "\nAutor: " + getAutor() +
+                "\nNúmero de páginas: " + getNumeroPaginas() +
+                "\n-----------------------------";
     }
 
     @Override
     public void baixar(){
         System.out.println("Ebook foi baixado");
+    }
+
+    @Override
+    public void executar() {
+        baixar();
+        System.out.println("-----------------------------");
     }
 
     

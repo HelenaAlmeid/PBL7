@@ -15,6 +15,7 @@ public abstract class ItemBibliotecaDigital {
         return autor;
     }
 
-    public abstract void descricao();
+    public abstract String descricao();
+    public abstract void executar();
 
 }
